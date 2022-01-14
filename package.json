@@ -9,8 +9,7 @@
     "dev": "nodemon lib/server",
     "test": "cross-env NODE_ENV=test jest",
     "compile:watch": "yarn tsc -w",
-    "heroku-postbuild": "yarn run build",
-    "engines": { "node" : "14.17.5" }
+    "heroku-postbuild": "yarn run build"    
   },
   "dependencies": {
     "@types/babel__core": "^7.1.18",
@@ -66,5 +65,6 @@
     "joi-to-typescript": "^2.4.0",
     "nodemon": "^2.0.15",
     "ts-jest": "^27.0.7"
-  }
+  },
+  "engines": { "node" : "14.17.5" }
 }
