@@ -3,7 +3,7 @@ import joi from 'joi';
 enum Meal_type {
   Breakfast = 'breakfast',
   Lunch = 'lunch',
-  Dinner = 'dinner',
+  Supper = 'supper',
   Snacks = 'snacks',
 }
 enum Difficulty_level {
@@ -19,7 +19,7 @@ export const validateEntry = joi.object({
     .valid(
       Meal_type.Breakfast,
       Meal_type.Lunch,
-      Meal_type.Dinner,
+      Meal_type.Supper,
       Meal_type.Snacks
     ),
   difficulty_level: joi
