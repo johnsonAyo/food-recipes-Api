@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "node lib/server",
-    "start": " cross-env NODE_ENV=production node lib/server",
+    "start": "node lib/server",
     "build": "tsc",
     "dev": "nodemon lib/server",
-    "test": "cross-env NODE_ENV=test jest",
+    "test": "jest",
     "compile:watch": "yarn tsc -w",
     "heroku-postbuild": "yarn run build"    
   },
