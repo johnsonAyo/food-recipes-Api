@@ -9,6 +9,7 @@ const recipeSchema = new mongoose.Schema(
       type: String,
       required: [true, 'A recipe must have a name'],
       trim: true,
+      unique:false
     },
     meal_type: {
       type: String,
